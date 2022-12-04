@@ -85,6 +85,18 @@ WSGI_APPLICATION = "blog_rest_api.wsgi.application"
 #     }
 # }
 
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "blog_rest_api",
+        "USER": "postgres",
+        "PASSWORD": "postgres@123",
+        "HOST": "localhost",
+        "POST": "5432",
+        
+    }
+}
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
